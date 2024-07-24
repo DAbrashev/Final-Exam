@@ -42,7 +42,7 @@ public class SecurityConfig {
     }
 
     @Bean
-public EcontUserDetailsService userDetailsService(UserRepository userRepository){
+    public EcontUserDetailsService userDetailsService(UserRepository userRepository) {
         return new EcontUserDetailsService(userRepository);
     }
 
