@@ -58,6 +58,19 @@
                 <!--                    Email is required.-->
                 <!--                </p>-->
             </div>
+
+            <div class="form-group">
+                <label th:for="phoneNumber" class="text-white font-weight-bold">PhoneNumber</label>
+                <input
+                        th:field="*{phoneNumber}"
+                        type="text"
+                        class="form-control"
+                        placeholder="Phone Number"/>
+                <!--                <p class="errors alert alert-danger">-->
+                <!--                    Password is required.-->
+                <!--                </p>-->
+            </div>
+
             <div class="form-group">
                 <label th:for="password" class="text-white font-weight-bold">Password</label>
                 <input

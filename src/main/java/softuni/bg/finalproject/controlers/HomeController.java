@@ -29,4 +29,10 @@ public class HomeController {
         }
         return "index";
     }
+
+    @GetMapping("/about")
+    public String viewAboutPage(Model model){
+
+        return "about";
+    }
 }

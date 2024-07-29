@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th='http://www.thymeleaf.org'
+      xmlns:sec='http://www.thymeleaf.org/extras/spring-security'>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Econt</title>
+    <link rel="stylesheet" href="/css/reset-css.css"/>
+    <link rel="stylesheet" href="/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/main.css"/>
+    <script src="/js/jquery-3.5.1.slim.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+</head>
+
+<body class="about">
+
+<div th:replace="~{fragments/navbar::navbar(activeLink=${'about'})}"></div>
+
+
+<div class="container">
+        <form class="main-form my-xl-8 col-md-6 mb-3 d-flex flex-column justify-content-center">
+            <h2 class="text-center text-white">Who we are</h2>
+            <div class="form-group">
+                <p class="text-justify text-white">For 30 years we have been growing and developing to be useful to you.
+                    Since its establishment in 1993, Econt has established itself as an expert in logistics for
+                    Bulgaria.
+                    Driven by the desire to give more every time, we never stop creating new and better solutions for
+                    you
+                    and your business in the field of logistics and payment services.</p>
+            </div>
+            <p>
+                <a href="https://bg.wikipedia.org/wiki/%D0%95%D0%BA%D0%BE%D0%BD%D1%82_%D0%95%D0%BA%D1%81%D0%BF%D1%80%D0%B5%D1%81"
+                   target="_blank">Learn more</a>
+            </p>
+        </form>
+        <form class="main-form my-xl-8 col-md-6 mb-3 d-flex flex-column justify-content-center">
+            <h2 class="text-center text-white">Mission</h2>
+            <div>
+                <p class="text-justify text-white">
+                    We continue to create conditions for the long-term development of e-commerce in Bulgaria. We work
+                    together with national and international e-commerce leaders for the benefit of individual customers.
+                    We
+                    create innovative solutions with a focus on our customers and partners. We prioritize the quality
+                    and
+                    delivery time of our services. We achieve this with efficient management and the personal commitment
+                    of
+                    our experts. Good financial results enable us to develop and support projects related to knowledge
+                    and
+                    for the benefit of society.
+                </p>
+            </div>
+        </form>
+        <form class="main-form my-xl-8 col-md-6 mb-3 d-flex flex-column justify-content-center">
+            <h2 class="text-center text-white">Valuables</h2>
+            <div>
+
+                <h4 class="text-white">Respect</h4>
+                <dd class="text-white">We are open and honest with everyone. We create lasting relationships with
+                    trust.
+                </dd>
+
+                <h4 class="text-white">Family spirit</h4>
+                <dd class="text-white">We work together. We can count on each other and that makes us happy.</dd>
+
+                <h4 class="text-white">Pursuit of perfection</h4>
+                <dd class="text-white"> We achieve the highest result with the least action. We strive for perfection.
+                </dd>
+
+                <h4 class="text-white">Innovation</h4>
+                <dd class="text-white"> We strive for growth and knowledge. We are ready to leave the "comfort zone" for
+                    more meaningful
+                    solutions for the benefit of each client.
+                </dd>
+
+                <h4 class="text-white">Unidirectionality</h4>
+                <dd class="text-white"> We work with everything as it is. We achieve our goals inspired, determined and
+                    driven.
+                </dd>
+            </div>
+
+        </form>
+
+</div>
+
+</body>

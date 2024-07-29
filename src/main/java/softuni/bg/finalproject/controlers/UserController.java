@@ -51,4 +51,9 @@ public class UserController {
 
         return "redirect:/";
     }
+
+    @GetMapping("/make-order")
+    public String viewMakeOrder(){
+        return "make-order";
+    }
 }

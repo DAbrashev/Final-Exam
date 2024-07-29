@@ -7,11 +7,19 @@ body {
      background-color: #464646;
  }
 
+.about {
+     background-image: url('/images/2.jpg');
+     background-position: left;
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+     background-size: cover;
+     background-color: #464646;
+}
+
 .navbar .logo {
      max-height: 50px;
      padding-right: 50px;
 }
-
 .container, .container-fluid {
      padding-top: 90px;
 }

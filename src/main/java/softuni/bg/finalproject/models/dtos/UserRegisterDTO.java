@@ -1,5 +1,6 @@
 package softuni.bg.finalproject.models.dtos;
 
+import jakarta.persistence.Column;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Size;
@@ -14,6 +15,9 @@ public class UserRegisterDTO {
     @NotBlank
     @Size(min = 4,max = 20)
     private String lastName;
+
+    @Column(nullable = false, unique = true)
+    private String phoneNumber;
 
     @Email
     private String email;
@@ -43,6 +47,14 @@ public class UserRegisterDTO {
 
     public void setLastName(String lastName) {
         this.lastName = lastName;
+    }
+
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
+
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
     }
 
     public String getEmail() {
